@@ -2,7 +2,7 @@
 
 # GeoMath
 
-## Geometric Math
+### _**Geometric Math**_
 
 </div>
 
