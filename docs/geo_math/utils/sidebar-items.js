@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["formatting",""],["user",""]]});
+initSidebarItems({"mod":[["format",""]]});
