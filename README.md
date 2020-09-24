@@ -2,7 +2,7 @@
 
 # GeoMath
 
-_**Geometric Math**_
+### _**Geometric Math**_
 
 </div>
 
@@ -10,13 +10,11 @@ _**Geometric Math**_
 
 ## Square, Rectangle and Parallelogram
 
-To define a **square** it must have equal sides, and internal angles equal to 90º
+_To define a **square** it must have equal sides, and internal angles equal to 90º
 To define a **rectangles** all internal angles must be 90º, not needing equal sides
-To define a **parallelogram** the sides must be parallel.
+To define a **parallelogram** the sides must be parallel._
 
-$$
-A = B.h
-$$
+### ![**A = B.h**](http://latex.codecogs.com/svg.latex?A&space;=&space;B.h)
 
 > _Area equals base multiplied by height_
 
@@ -32,9 +30,7 @@ _In the case of **parallelogram** the height is the segment perpendicular to the
 
 ## Triangle
 
-$$
-A = \frac{B.h}{2}
-$$
+### ![**A = (B.h)/2**](http://latex.codecogs.com/svg.latex?A&space;=&space;\frac{B.h}{2})
 
 > _Area equals base multiplied by height divided by 2_
 
@@ -46,11 +42,9 @@ $$
 
 ### Semi-perimeter formula
 
-When you have the size of all sides of the triangle
+_When you have the size of all sides of the triangle_
 
-$$
-p = \frac{a+b+c}{2}
-$$
+![`p=(a+b+c)/2`](http://latex.codecogs.com/svg.latex?p=\frac{a+b+c}{2})
 
 > _Semi-perimeter is equal to the sum of the sides divided by 2_
 
@@ -61,9 +55,7 @@ $$
 | `b`    | Side b         |
 | `c`    | Side c         |
 
-$$
-A = \sqrt{p.(p-a).(p-b).(p-c)}
-$$
+### ![**A = √(p.(p-a).(p-b).(p-c))**](<http://latex.codecogs.com/svg.latex?&space;A&space;=&space;\sqrt{(p.(p-a).(p-b).(p-c))}>)
 
 > _Area equals the square root multiplied by the difference in the semi-perimeter with side a, multiplied by the difference in the semi-perimeter with side a, multiplied by the difference in the semi-perimeter with side c_
 
@@ -79,12 +71,9 @@ $$
 
 ## Trapezoid
 
-A trapezoid is a quadrilateral, where it must have 2 parallel opposite sides, and 2 opposite non-parallel sides
+_A trapezoid is a quadrilateral, where it must have 2 parallel opposite sides, and 2 opposite non-parallel sides_
 
-
-$$
-A = \frac{(B+b).h}{2}
-$$
+### ![**A = ((B+b).h))/2**](<http://latex.codecogs.com/svg.latex?A&space;=&space;\frac{(B+b).h}{2}>)
 
 > _Area equals major base plus minor base multiplied by height, divided by 2_
 
@@ -99,11 +88,9 @@ $$
 
 ## Rhombus
 
-Quadrilateral, where all sides are equal
+_Quadrilateral, where all sides are equal_
 
-$$
-A = \frac{D.d}{2}
-$$
+### ![**A = (D.d)/2**](http://latex.codecogs.com/svg.latex?A&space;=&space;\frac{D.d}{2})
 
 > _Larger diagonal multiplied by the smaller diagonal multiplied by 2_
 
@@ -117,11 +104,9 @@ $$
 
 ## Circle
 
-A circle must have all the points of its circumference the same distance from the central point
+_A circle must have all the points of its circumference the same distance from the central point_
 
-$$
-A = \pi . r²
-$$
+### ![**A = π . r²**](http://latex.codecogs.com/svg.latex?A&space;=&space;\pi&space;.&space;r^{2})
 
 > _Area equals PI multiplied by the radius raised to 2_
 
