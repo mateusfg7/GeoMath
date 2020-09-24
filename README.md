@@ -55,11 +55,7 @@ When you have the size of all sides of the triangle
 | `b`    | Side b         |
 | `c`    | Side c         |
 
-<div align="center">
-
 ![**A = √(p.(p-a).(p-b).(p-c))**](<http://latex.codecogs.com/svg.latex?&space;A&space;=&space;\sqrt{(p.(p-a).(p-b).(p-c))}>)
-
-</div>
 
 > _Area equals the square root multiplied by the difference in the semi-perimeter with side a, multiplied by the difference in the semi-perimeter with side a, multiplied by the difference in the semi-perimeter with side c_
 
