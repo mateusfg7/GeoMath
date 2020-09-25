@@ -31,7 +31,8 @@ subcommands:
                 long: area
                 help: get tha Area of the form
     - rectangle:
-        about: rectangle calculations
+    - parallelogram:
+        about: parallelogram calculations
         version: "1.0"
         author: Mateus F. <mateusfelipefg77@gmail>
         args:
@@ -51,22 +52,35 @@ subcommands:
                 short: a
                 long: area
                 help: get tha Area of the form
-    - parallelogram:
-        about: parallelogram calculations
+    - triangle:
+        about: triangle calculations
         version: "1.0"
         author: Mateus F. <mateusfelipefg77@gmail>
         args:
             - base:
-                short: b
                 long: base
                 value_name: BASE
-                help: sets the Base of the form | e.g. -b=5
+                help: sets the base of the form | e.g. --base=5
                 takes_value: true
             - height:
-                short: e
-                long: heigth
+                long: height
                 value_name: HEIGTH
-                help: sets the hEight of the form | e.g. -e=5
+                help: sets the height of the form | e.g. --height=5
+                takes_value: true
+            - side-a:
+                long: side-a
+                value_name: SIDE-A
+                help: sets the hEight of the form | e.g. --side-a=5
+                takes_value: true
+            - side-b:
+                long: side-b
+                value_name: SIDE-B
+                help: sets the hEight of the form | e.g. --side-b=5
+                takes_value: true
+            - side-c:
+                long: side-c
+                value_name: SIDE-C
+                help: sets the hEight of the form | e.g. --side-c=5
                 takes_value: true
             - area:
                 short: a

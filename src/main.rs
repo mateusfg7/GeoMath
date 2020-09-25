@@ -19,6 +19,15 @@ pub fn main() {
 
     if let Some(matches) = matches.subcommand_matches("square") {
         square_action(matches);
+    }
+    if let Some(matches) = matches.subcommand_matches("rectangle") {
+        square_action(matches);
+    }
+    if let Some(matches) = matches.subcommand_matches("parallelogram") {
+        square_action(matches);
+    }
+    if let Some(matches) = matches.subcommand_matches("triangle") {
+        
     } else {
         println!(
             "
@@ -28,6 +37,8 @@ pub fn main() {
         )
     }
 }
+
+fn triangle_action
 
 fn square_action(matches: &ArgMatches) {
     let base = String::from(matches.value_of("base").unwrap());
