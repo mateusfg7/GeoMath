@@ -86,3 +86,7 @@ subcommands:
                 short: a
                 long: area
                 help: get tha Area of the form
+            - perimeter:
+                short: p
+                long: perimeter
+                help: get the perimeter of the form
