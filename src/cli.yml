@@ -90,3 +90,27 @@ subcommands:
                 short: p
                 long: perimeter
                 help: get the perimeter of the form
+    - trapezoid:
+        about: trapezoid calculations
+        version: "1.0"
+        author: Mateus F. <mateusfelipefg77@gmail>
+        args:
+            - sBase:
+                long: sBase
+                value_name: SMALLER BASE
+                help: sets the smaller base of the form | e.g. --sBase=5
+                takes_value: true
+            - lBase:
+                long: lBase
+                value_name: LARGER BASE
+                help: sets the larger base of the form | e.g. --lBase=5
+                takes_value: true
+            - height:
+                long: height
+                value_name: HEIGTH
+                help: sets the height of the form | e.g. --height=5
+                takes_value: true
+            - area:
+                short: a
+                long: area
+                help: get tha Area of the form
