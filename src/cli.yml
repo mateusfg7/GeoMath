@@ -114,3 +114,22 @@ subcommands:
                 short: a
                 long: area
                 help: get tha Area of the form
+    - rhombus:
+        about: rhombus calculations
+        version: "1.0"
+        author: Mateus F. <mateusfelipefg77@gmail>
+        args:
+            - sDiagonal:
+                long: sDiagonal
+                value_name: SMALLER DIAGONAL
+                help: sets the smaller diagonal of the form | e.g. --sDiagonal=5
+                takes_value: true
+            - sDiagonal:
+                long: sDiagonal
+                value_name: LARGER DIAGONAL
+                help: sets the larger diagonal of the form | e.g. --sDiagonal=5
+                takes_value: true
+            - area:
+                short: a
+                long: area
+                help: get tha Area of the form
