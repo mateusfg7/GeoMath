@@ -45,11 +45,11 @@ pub fn main() {
 }
 
 fn trapezoid_action(matches: &ArgMatches) {
-    let lBase = String::from(matches.value_of("lBase").unwrap());
-    let sBase = String::from(matches.value_of("sBase").unwrap());
+    let l_base = String::from(matches.value_of("lBase").unwrap());
+    let s_base = String::from(matches.value_of("sBase").unwrap());
     let height = String::from(matches.value_of("height").unwrap());
 
-    let trapezoid = make_trapezoid(lBase, sBase, height);
+    let trapezoid = make_trapezoid(l_base, s_base, height);
 
     if matches.is_present("area") {
         print!("{}cm", trapezoid.get_area())
@@ -94,18 +94,18 @@ fn square_action(matches: &ArgMatches) {
     }
 }
 
-fn make_trapezoid(lBase: String, sBase: String, height: String) -> Trapezoid {
-    let formated_lBase_str = format::trim_str(lBase);
-    let formated_sBase_str = format::trim_str(sBase);
+fn make_trapezoid(l_base: String, s_base: String, height: String) -> Trapezoid {
+    let formated_larger_base_str = format::trim_str(l_base);
+    let formated_smaller_base_str = format::trim_str(s_base);
     let formated_height_str = format::trim_str(height);
 
-    let formated_lBase_int = format::str2int(formated_lBase_str);
-    let formated_sBase_int = format::str2int(formated_sBase_str);
+    let formated_larger_base_int = format::str2int(formated_larger_base_str);
+    let formated_smaller_base_int = format::str2int(formated_smaller_base_str);
     let formated_height_int = format::str2int(formated_height_str);
 
     return Trapezoid {
-        lBase: formated_lBase_int,
-        sBase: formated_sBase_int,
+        l_base: formated_larger_base_int,
+        s_base: formated_smaller_base_int,
         height: formated_height_int,
     };
 }
