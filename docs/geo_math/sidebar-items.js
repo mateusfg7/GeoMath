@@ -1,1 +1,1 @@
-initSidebarItems({"fn":[["main",""],["make_square",""],["square_action",""]],"mod":[["forms",""],["utils",""]]});
+initSidebarItems({"fn":[["main",""],["make_sides_triangle",""],["make_simple_triangle",""],["make_square",""],["make_trapezoid",""],["square_action",""],["trapezoid_action",""],["triangle_action",""]],"mod":[["forms",""],["utils",""]]});

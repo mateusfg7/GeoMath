@@ -1,1 +1,1 @@
-initSidebarItems({"fn":[["str2int",""],["trim_str",""]]});
+initSidebarItems({"fn":[["str2float",""],["str2int",""],["trim_str",""]]});

@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["square",""]]});
+initSidebarItems({"mod":[["square",""],["trapezoid",""],["triangle",""]]});
