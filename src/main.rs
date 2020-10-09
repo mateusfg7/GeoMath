@@ -8,6 +8,7 @@ use clap::ArgMatches;
 
 mod forms;
 use forms::square::Square;
+use forms::trapezoid::Trapezoid;
 use forms::triangle::SidesTriangle;
 use forms::triangle::SimpleTriangle;
 
@@ -30,6 +31,9 @@ pub fn main() {
     }
     if let Some(matches) = matches.subcommand_matches("triangle") {
         triangle_action(matches);
+    }
+    if let Some(matches) = matches.subcommand_matches("trapezoid") {
+        trapezoid_action(matches);
     } else {
         println!(
             "
@@ -37,6 +41,18 @@ pub fn main() {
     geo-math --help
             "
         )
+    }
+}
+
+fn trapezoid_action(matches: &ArgMatches) {
+    let lBase = String::from(matches.value_of("lBase").unwrap());
+    let sBase = String::from(matches.value_of("sBase").unwrap());
+    let height = String::from(matches.value_of("height").unwrap());
+
+    let trapezoid = make_trapezoid(lBase, sBase, height);
+
+    if matches.is_present("area") {
+        print!("{}cm", trapezoid.get_area())
     }
 }
 
@@ -76,6 +92,22 @@ fn square_action(matches: &ArgMatches) {
     if matches.is_present("area") {
         println!("{}cm", square.get_area())
     }
+}
+
+fn make_trapezoid(lBase: String, sBase: String, height: String) -> Trapezoid {
+    let formated_lBase_str = format::trim_str(lBase);
+    let formated_sBase_str = format::trim_str(sBase);
+    let formated_height_str = format::trim_str(height);
+
+    let formated_lBase_int = format::str2int(formated_lBase_str);
+    let formated_sBase_int = format::str2int(formated_sBase_str);
+    let formated_height_int = format::str2int(formated_height_str);
+
+    return Trapezoid {
+        lBase: formated_lBase_int,
+        sBase: formated_sBase_int,
+        height: formated_height_int,
+    };
 }
 
 fn make_sides_triangle(side_a: String, side_b: String, side_c: String) -> SidesTriangle {
