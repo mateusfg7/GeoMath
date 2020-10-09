@@ -10,7 +10,8 @@ args:
     
 subcommands:
     - square:
-        about: square calculations
+    - rectangle:
+        about: retangle calculations
         version: "1.0"
         author: Mateus F. <mateusfelipefg77@gmail>
         args:
@@ -30,7 +31,6 @@ subcommands:
                 short: a
                 long: area
                 help: get tha Area of the form
-    - rectangle:
     - parallelogram:
         about: parallelogram calculations
         version: "1.0"
