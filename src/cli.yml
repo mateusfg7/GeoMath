@@ -1,5 +1,5 @@
 name: GeoMath
-version: "0.1.0"
+version: "1.0.0"
 author: Mateus Felipe <mateusfelipefg77@gmail.com>
 about: Geomatric calcs
 usage: geo-math <FORM> [VALUES] [ACTION]
