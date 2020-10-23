@@ -8,26 +8,6 @@ _**Geometric Math**_
 
 ---
 
-## Square, Rectangle and Parallelogram
-
-To define a **square** it must have equal sides, and internal angles equal to 90º
-To define a **rectangles** all internal angles must be 90º, not needing equal sides
-To define a **parallelogram** the sides must be parallel.
-
-![**A = B.h**](http://latex.codecogs.com/svg.latex?A&space;=&space;B.h)
-
-> _Area equals base multiplied by height_
-
-| letter | value  |
-| ------ | ------ |
-| `A`    | Area   |
-| `B`    | Base   |
-| `h`    | Height |
-
-_In the case of **parallelogram** the height is the segment perpendicular to the base, so that the two form an angle of 90º_
-
----
-
 ## Triangle
 
 ![**A = (B.h)/2**](http://latex.codecogs.com/svg.latex?A&space;=&space;\frac{B.h}{2})
