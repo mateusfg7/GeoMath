@@ -42,15 +42,14 @@ pub fn main() {
     }
     if let Some(matches) = matches.subcommand_matches("circle") {
         circle_actions(matches);
+    } else {
+        println!(
+            "
+    To view the help menu type
+    geo-math --help
+            "
+        )
     }
-    // else {
-    //     println!(
-    //         "
-    // To view the help menu type
-    // geo-math --help
-    //         "
-    //     )
-    // }
 }
 
 fn circle_actions(matches: &ArgMatches) {
