@@ -8,13 +8,6 @@ _**GEOMETRIC MATH**_
 
 ![formulas](.github/assets/formulas.png)
 
-<!-- ![circle](.github/assets/formulas/circle.png)
-![rhombus](.github/assets/formulas/rhombus.png)
-![square](.github/assets/formulas/square.png)
-![trapezoid](.github/assets/formulas/trapezoid.png)
-![triangle](.github/assets/formulas/triangle.png)
-![semi-perimeter](.github/assets/formulas/semi-perimeter.png)
-![perimeter-area](.github/assets/formulas/perimeter-area.png) -->
 
 </div>
 
@@ -37,6 +30,7 @@ you will see the help menu, something like this
 _you can type `geo-math [shape] --help`_ to get the help menu of each geometry
 
 #### Circle
+![](./github/assets/forms/circle.png)
 
 Features
 - get area
