@@ -133,3 +133,17 @@ subcommands:
                 short: a
                 long: area
                 help: get tha Area of the form
+    - circle:
+        about: circle calculations
+        version: "1.0"
+        author: Mateus F. <mateusfelipefg77@gmail>
+        args:
+            - raio:
+                long: raio
+                value_name: RAIO
+                help: sets the raio of the circle | e.g. --raio=5
+                takes_value: true
+            - area:
+                short: a
+                long: area
+                help: get tha Area of the circle
