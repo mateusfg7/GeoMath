@@ -7,20 +7,7 @@ _**Geometric Math**_
 </div>
 
 
-## Trapezoid
 
-A trapezoid is a quadrilateral, where it must have 2 parallel opposite sides, and 2 opposite non-parallel sides
-
-![**A = ((B+b).h))/2**](<http://latex.codecogs.com/svg.latex?A&space;=&space;\frac{(B+b).h}{2}>)
-
-> _Area equals major base plus minor base multiplied by height, divided by 2_
-
-| letter | value      |
-| ------ | ---------- |
-| `A`    | Area       |
-| `B`    | Minor Base |
-| `b`    | Major Base |
-| `h`    | Height     |
 
 ---
 
