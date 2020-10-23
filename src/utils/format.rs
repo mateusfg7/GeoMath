@@ -9,3 +9,7 @@ pub fn str2int(string: String) -> i32 {
 pub fn str2float(string: String) -> f32 {
     string.parse::<f32>().unwrap()
 }
+
+pub fn str2big_float(string: String) -> f64 {
+    string.parse::<f64>().unwrap()
+}
