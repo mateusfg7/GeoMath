@@ -7,6 +7,7 @@ use clap::App;
 use clap::ArgMatches;
 
 mod forms;
+use forms::circle::Circle;
 use forms::rhombus::Rhombus;
 use forms::square::Square;
 use forms::trapezoid::Trapezoid;
@@ -38,13 +39,27 @@ pub fn main() {
     }
     if let Some(matches) = matches.subcommand_matches("rhombus") {
         rhombus_action(matches);
-    } else {
-        println!(
-            "
-    To view the help menu type 
-    geo-math --help
-            "
-        )
+    }
+    if let Some(matches) = matches.subcommand_matches("circle") {
+        circle_actions(matches);
+    }
+    // else {
+    //     println!(
+    //         "
+    // To view the help menu type
+    // geo-math --help
+    //         "
+    //     )
+    // }
+}
+
+fn circle_actions(matches: &ArgMatches) {
+    let raio = String::from(matches.value_of("raio").unwrap());
+
+    let circle = make_circle(raio);
+
+    if matches.is_present("area") {
+        println!("{}cm", circle.get_area())
     }
 }
 
@@ -107,6 +122,15 @@ fn square_action(matches: &ArgMatches) {
     if matches.is_present("area") {
         println!("{}cm", square.get_area())
     }
+}
+
+fn make_circle(raio: String) -> Circle {
+    let formated_raio_str = format::trim_str(raio);
+    let formated_raio_float = format::str2big_float(formated_raio_str);
+
+    return Circle {
+        raio: formated_raio_float,
+    };
 }
 
 fn make_rhombus(l_diagonal: String, s_diagonal: String) -> Rhombus {
