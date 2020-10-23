@@ -25,12 +25,12 @@ you will see the help menu, something like this
 
 #### **GeoMath have support of seven shapes:**
 
-[circle](#circle) - [parallelogram](#square-rectangle-and-parallelogram) - [retangle](#square-rectangle-and-parallelogram) - [rhombus](#rhombus) - [square](#square-rectangle-and-parallelogram) - [trapezoid](#trapezoid)
+[circle](#circle) - [parallelogram](#square-rectangle-and-parallelogram) - [retangle](#square-rectangle-and-parallelogram) - [rhombus](#rhombus) - [square](#square-rectangle-and-parallelogram) - [trapezoid](#trapezoid) - [triangle]()
 
 _you can type `geo-math [shape] --help`_ to get the help menu of each geometry
 
 #### Circle
-![](./github/assets/forms/circle.png)
+![test](.github/assets/forms/circle.png)
 
 Features
 - get area
@@ -83,4 +83,38 @@ e.g:
 $ geo-math trapezoid --lBase=42 --sBase=42 --height=42 -a
 
 1764cm 
+```
+
+#### Triangle
+
+Features
+- get area
+
+using base and height: `geo-math triangle --base=[THE BASE OF TRIANGLE] --height=[HEIGHT OF TRIANGLE] -a`
+
+e.g:
+```bash
+$ geo-math triangle --base=42 --height=42 -a
+
+882cm 
+```
+
+using sides: `geo-math triangle --side-a=[SIDE A] --side-b=[SIDE B] --side-c=[SIDE C] -a`
+
+e.g:
+```bash
+$ geo-math triangle --side-a=42 --side-b=42 --side-c=42 -a
+
+763.8344cm
+```
+
+- get perimeter
+
+usage: `geo-math triangle --side-a=[SIDE A] --side-b=[SIDE B] --side-c=[SIDE C] -p`
+
+e.g:
+```bash
+$ geo-math triangle --side-a=42 --side-b=42 --side-c=42 -p
+
+63cm
 ```
