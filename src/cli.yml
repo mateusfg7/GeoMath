@@ -124,8 +124,8 @@ subcommands:
                 value_name: SMALLER DIAGONAL
                 help: sets the smaller diagonal of the form | e.g. --sDiagonal=5
                 takes_value: true
-            - sDiagonal:
-                long: sDiagonal
+            - lDiagonal:
+                long: lDiagonal
                 value_name: LARGER DIAGONAL
                 help: sets the larger diagonal of the form | e.g. --sDiagonal=5
                 takes_value: true
