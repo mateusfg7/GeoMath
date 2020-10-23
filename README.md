@@ -18,7 +18,6 @@ _**GEOMETRIC MATH**_
 
 </div>
 
----
 
 ### Usage
 
