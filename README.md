@@ -2,9 +2,9 @@
 
 <!-- # GeoMath -->
 # ![GeoMath](.github/assets/logo.png)
-_**Geometric Math**_
+_**GEOMETRIC MATH**_
 
-[wiki](https://github.com/mateusfg7/GeoMath/wiki) - [docs](https://mateusfg7.github.io/GeoMath/geo_math/) - [usage](#geomath-have-support-of-seven-shapes)
+[WIKI](https://github.com/mateusfg7/GeoMath/wiki) - [DOCS](https://mateusfg7.github.io/GeoMath/geo_math/) - [USAGE](#geomath-have-support-of-seven-shapes)
 
 ![formulas](.github/assets/formulas.png)
 
