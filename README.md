@@ -25,96 +25,99 @@ you will see the help menu, something like this
 
 #### **GeoMath have support of seven shapes:**
 
-[circle](#circle) - [parallelogram](#square-rectangle-and-parallelogram) - [retangle](#square-rectangle-and-parallelogram) - [rhombus](#rhombus) - [square](#square-rectangle-and-parallelogram) - [trapezoid](#trapezoid) - [triangle]()
+[circle](#circle) - [parallelogram](#square-rectangle-and-parallelogram) - [retangle](#square-rectangle-and-parallelogram) - [rhombus](#rhombus) - [square](#square-rectangle-and-parallelogram) - [trapezoid](#trapezoid) - [triangle](#triangle)
 
 _you can type `geo-math [shape] --help`_ to get the help menu of each geometry
 
 #### Circle
 ![test](.github/assets/forms/circle.png)
 
-Features
-- get area
+FEATURES
+- **get area**
 
-usage: `geo-math circle --raio=[THE RAIO OF CIRLCE] [ACTION]`
+  usage: `geo-math circle --raio=[THE RAIO OF CIRLCE] [ACTION]`
 
-e.g:
-```bash
-$ geo-math circle --raio=5 -a
+  e.g:
+  ```bash
+  $ geo-math circle --raio=5 -a
 
-49.34802200544679cm
-```
+  49.34802200544679cm
+  ```
 #### Square, Rectangle and Parallelogram
 
 _all this shapes uses the same formula_
 
-Features
-- get area
+FEATURES
 
-usage: `geo-math [command] --base=[THE BASE OF THE SHAPE] --heigth=[THE HEIGTH OF THE SHAPE] [ACTION]`
+- **get area**
 
-e.g:
-```bash
-$ geo-math square --base=5 --heigth=5 -a
+  usage: `geo-math [command] --base=[THE BASE OF THE SHAPE] --heigth=[THE HEIGTH OF THE SHAPE] [ACTION]`
 
-25cm
-```
+  e.g:
+  ```bash
+  $ geo-math square --base=5 --heigth=5 -a
+
+  25cm
+  ```
 #### Rhombus
 
-Features
-- get area
+FEATURES
+- **get area**
 
-usage: `geo-math rhombus --lDiagonal=[LARGER DIAGONAL] --sDiagonal=[SMALLER DIAGONAL] [ACTION]`
+  usage: `geo-math rhombus --lDiagonal=[LARGER DIAGONAL] --sDiagonal=[SMALLER DIAGONAL] [ACTION]`
 
-e.g:
-```bash
-$ geo-math rhombus --lDiagonal=42 --sDiagonal=42 -a
+  e.g:
+  ```bash
+  $ geo-math rhombus --lDiagonal=42 --sDiagonal=42 -a
 
-882cm
-```
+  882cm
+  ```
 #### Trapezoid
 
-Features
-- get area
+FEATURES
 
-usage: `geo-math circle --lBase=[LARGER BASE] --sBase=[SMALLER BASE] --height=[THE HEIGHT OF SHAPE] [ACTION]`
+- **get area**
 
-e.g:
-```bash
-$ geo-math trapezoid --lBase=42 --sBase=42 --height=42 -a
+  usage: `geo-math circle --lBase=[LARGER BASE] --sBase=[SMALLER BASE] --height=[THE HEIGHT OF SHAPE] [ACTION]`
 
-1764cm 
-```
+  e.g:
+  ```bash
+  $ geo-math trapezoid --lBase=42 --sBase=42 --height=42 -a
+
+  1764cm 
+  ```
 
 #### Triangle
 
-Features
-- get area
+FEATURES
 
-using base and height: `geo-math triangle --base=[THE BASE OF TRIANGLE] --height=[HEIGHT OF TRIANGLE] -a`
+- **get area**
 
-e.g:
-```bash
-$ geo-math triangle --base=42 --height=42 -a
+  using base and height: `geo-math triangle --base=[THE BASE OF TRIANGLE] --height=[HEIGHT OF TRIANGLE] -a`
 
-882cm 
-```
+  e.g:
+  ```bash
+  $ geo-math triangle --base=42 --height=42 -a
 
-using sides: `geo-math triangle --side-a=[SIDE A] --side-b=[SIDE B] --side-c=[SIDE C] -a`
+  882cm 
+  ```
 
-e.g:
-```bash
-$ geo-math triangle --side-a=42 --side-b=42 --side-c=42 -a
+  using sides: `geo-math triangle --side-a=[SIDE A] --side-b=[SIDE B] --side-c=[SIDE C] -a`
 
-763.8344cm
-```
+  e.g:
+  ```bash
+  $ geo-math triangle --side-a=42 --side-b=42 --side-c=42 -a
 
-- get perimeter
+  763.8344cm
+  ```
 
-usage: `geo-math triangle --side-a=[SIDE A] --side-b=[SIDE B] --side-c=[SIDE C] -p`
+- **get perimeter**
 
-e.g:
-```bash
-$ geo-math triangle --side-a=42 --side-b=42 --side-c=42 -p
+  usage: `geo-math triangle --side-a=[SIDE A] --side-b=[SIDE B] --side-c=[SIDE C] -p`
 
-63cm
-```
+  e.g:
+  ```bash
+  $ geo-math triangle --side-a=42 --side-b=42 --side-c=42 -p
+
+  63cm
+  ```
