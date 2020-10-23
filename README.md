@@ -1,10 +1,14 @@
+[wiki_path]: .github/assets/buttons/WIKI.png
+[docs_path]: .github/assets/buttons/DOCS.png
+[usage_path]: .github/assets/buttons/USAGE.png
+
 <div align="center">
 
 <!-- # GeoMath -->
 # ![GeoMath](.github/assets/logo.png)
 _**GEOMETRIC MATH**_
 
-[WIKI](https://github.com/mateusfg7/GeoMath/wiki) - [DOCS](https://mateusfg7.github.io/GeoMath/geo_math/) - [USAGE](#geomath-have-support-of-seven-shapes)
+[![WIKI][wiki_path]](https://github.com/mateusfg7/GeoMath/wiki)[![DOCS][docs_path]](https://mateusfg7.github.io/GeoMath/geo_math/)[![USAGE][usage_path]](#geomath-have-support-of-seven-shapes)
 
 ![formulas](.github/assets/formulas.png)
 
