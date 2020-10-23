@@ -4,7 +4,7 @@
 # ![GeoMath](.github/assets/logo.png)
 _**Geometric Math**_
 
-[wiki](https://github.com/mateusfg7/GeoMath/wiki) - [docs](https://mateusfg7.github.io/GeoMath/geo_math/) - [usage](#usage)
+[wiki](https://github.com/mateusfg7/GeoMath/wiki) - [docs](https://mateusfg7.github.io/GeoMath/geo_math/) - [usage](#geomath-have-support-of-seven-shapes)
 
 </div>
 
@@ -23,7 +23,7 @@ you will see the help menu, something like this
 
 #### **GeoMath have support of seven shapes:**
 
-[circle]() - [parallelogram]() - [retangle]() - [rhombus]() - [square]() - [trapezoid]()
+[circle](#circle) - [parallelogram](#square-rectangle-and-parallelogram) - [retangle](#square-rectangle-and-parallelogram) - [rhombus](#rhombus) - [square](#square-rectangle-and-parallelogram) - [trapezoid](#trapezoid)
 
 _you can type `geo-math [shape] --help`_ to get the help menu of each geometry
 
