@@ -6,6 +6,14 @@ _**Geometric Math**_
 
 [wiki](https://github.com/mateusfg7/GeoMath/wiki) - [docs](https://mateusfg7.github.io/GeoMath/geo_math/) - [usage](#geomath-have-support-of-seven-shapes)
 
+![circle](.github/assets/formulas/circle.png)
+![rhombus](.github/assets/formulas/rhombus.png)
+![square](.github/assets/formulas/square.png)
+![trapezoid](.github/assets/formulas/trapezoid.png)
+![triangle](.github/assets/formulas/triangle.png)
+![semi-perimeter](.github/assets/formulas/semi-perimeter.png)
+![perimeter-area](.github/assets/formulas/perimeter-area.png)
+
 </div>
 
 ---
@@ -74,6 +82,7 @@ Features
 - get area
 
 usage: `geo-math circle --lBase=[LARGER BASE] --sBase=[SMALLER BASE] --height=[THE HEIGHT OF SHAPE] [ACTION]`
+
 e.g:
 ```bash
 $ geo-math trapezoid --lBase=42 --sBase=42 --height=42 -a
