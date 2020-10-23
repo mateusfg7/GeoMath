@@ -30,7 +30,7 @@ you will see the help menu, something like this
 _you can type `geo-math [shape] --help`_ to get the help menu of each geometry
 
 #### Circle
-![test](.github/assets/forms/circle.png)
+![circle](.github/assets/forms/circle.png)
 
 FEATURES
 - **get area**
@@ -44,6 +44,7 @@ FEATURES
   49.34802200544679cm
   ```
 #### Square, Rectangle and Parallelogram
+![square](.github/assets/forms/square.png) ![rectangle](.github/assets/forms/rectangle.png) ![parallelogram](.github/assets/forms/parallelogram.png)
 
 _all this shapes uses the same formula_
 
@@ -60,6 +61,7 @@ FEATURES
   25cm
   ```
 #### Rhombus
+![rhombus](.github/assets/forms/rhombus.png)
 
 FEATURES
 - **get area**
@@ -73,6 +75,7 @@ FEATURES
   882cm
   ```
 #### Trapezoid
+![trapezoid](.github/assets/forms/trapezoid.png)
 
 FEATURES
 
@@ -88,6 +91,7 @@ FEATURES
   ```
 
 #### Triangle
+![triangle](.github/assets/forms/triangle.png)
 
 FEATURES
 
