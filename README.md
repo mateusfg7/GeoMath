@@ -6,48 +6,6 @@ _**Geometric Math**_
 
 </div>
 
----
-
-## Triangle
-
-![**A = (B.h)/2**](http://latex.codecogs.com/svg.latex?A&space;=&space;\frac{B.h}{2})
-
-> _Area equals base multiplied by height divided by 2_
-
-| letter | value  |
-| ------ | ------ |
-| `A`    | Area   |
-| `B`    | Base   |
-| `h`    | Height |
-
-### Semi-perimeter formula
-
-When you have the size of all sides of the triangle
-
-![`p=(a+b+c)/2`](http://latex.codecogs.com/svg.latex?p=\frac{a+b+c}{2})
-
-> _Semi-perimeter is equal to the sum of the sides divided by 2_
-
-| letter | value          |
-| ------ | -------------- |
-| `p`    | Semi-perimeter |
-| `a`    | Side A         |
-| `b`    | Side b         |
-| `c`    | Side c         |
-
-![**A = √(p.(p-a).(p-b).(p-c))**](<http://latex.codecogs.com/svg.latex?&space;A&space;=&space;\sqrt{(p.(p-a).(p-b).(p-c))}>)
-
-> _Area equals the square root multiplied by the difference in the semi-perimeter with side a, multiplied by the difference in the semi-perimeter with side a, multiplied by the difference in the semi-perimeter with side c_
-
-| letter | value          |
-| ------ | -------------- |
-| `A`    | Area           |
-| `p`    | Semi-perimeter |
-| `a`    | Side A         |
-| `b`    | Side b         |
-| `c`    | Side c         |
-
----
 
 ## Trapezoid
 
