@@ -7,6 +7,7 @@ use clap::App;
 use clap::ArgMatches;
 
 mod forms;
+use forms::rhombus::Rhombus;
 use forms::square::Square;
 use forms::trapezoid::Trapezoid;
 use forms::triangle::SidesTriangle;
@@ -34,6 +35,9 @@ pub fn main() {
     }
     if let Some(matches) = matches.subcommand_matches("trapezoid") {
         trapezoid_action(matches);
+    }
+    if let Some(matches) = matches.subcommand_matches("rhombus") {
+        rhombus_action(matches);
     } else {
         println!(
             "
@@ -41,6 +45,17 @@ pub fn main() {
     geo-math --help
             "
         )
+    }
+}
+
+fn rhombus_action(matches: &ArgMatches) {
+    let l_diagonal = String::from(matches.value_of("lDiagonal").unwrap());
+    let s_diagonal = String::from(matches.value_of("sDiagonal").unwrap());
+
+    let rhombus = make_rhombus(l_diagonal, s_diagonal);
+
+    if matches.is_present("area") {
+        println!("{}cm", rhombus.get_area())
     }
 }
 
@@ -92,6 +107,19 @@ fn square_action(matches: &ArgMatches) {
     if matches.is_present("area") {
         println!("{}cm", square.get_area())
     }
+}
+
+fn make_rhombus(l_diagonal: String, s_diagonal: String) -> Rhombus {
+    let formated_larger_diagonal_str = format::trim_str(l_diagonal);
+    let formated_smaller_diagonal_str = format::trim_str(s_diagonal);
+
+    let formated_larger_diagonal_int = format::str2int(formated_larger_diagonal_str);
+    let formated_smaller_diagonal_int = format::str2int(formated_smaller_diagonal_str);
+
+    return Rhombus {
+        l_diagonal: formated_larger_diagonal_int,
+        s_diagonal: formated_smaller_diagonal_int,
+    };
 }
 
 fn make_trapezoid(l_base: String, s_base: String, height: String) -> Trapezoid {
