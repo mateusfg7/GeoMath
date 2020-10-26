@@ -1,5 +1,4 @@
 mod utils;
-use utils::format;
 
 #[macro_use]
 extern crate clap;
@@ -7,9 +6,9 @@ use clap::App;
 use clap::ArgMatches;
 
 mod forms;
-use forms::circle::Circle;
 
 mod makers;
+use makers::circle::make_circle;
 use makers::rhombus::make_rhombus;
 use makers::square::make_square;
 use makers::trapezoid::make_trapezoid;
@@ -122,13 +121,4 @@ fn square_action(matches: &ArgMatches) {
     if matches.is_present("area") {
         println!("{}cm", square.get_area())
     }
-}
-
-fn make_circle(raio: String) -> Circle {
-    let formatted_raio_str = format::trim_str(raio);
-    let formatted_raio_float = format::str2big_float(formatted_raio_str);
-
-    return Circle {
-        raio: formatted_raio_float,
-    };
 }
