@@ -1,7 +1,7 @@
 name: GeoMath
 version: "1.0.0"
 author: Mateus Felipe <mateusfelipefg77@gmail.com>
-about: Geomatric calcs
+about: Geometric calcs
 usage: geo-math <FORM> [VALUES] [ACTION]
 args:
     - doc:
@@ -22,8 +22,8 @@ subcommands:
                 takes_value: true
             - height:
                 short: e
-                long: heigth
-                value_name: HEIGTH
+                long: height
+                value_name: HEIGHT
                 help: sets the hEight of the form | e.g. -e=5
                 takes_value: true
             - area:
@@ -31,9 +31,9 @@ subcommands:
                 long: area
                 help: get tha Area of the form
     - rectangle:
-        about: retangle calculations
+        about: rectangle calculations
         version: "1.0"
-        author: Mateus F. <mateusfelipefg77@gmail>
+        author: Mateus F. <mateusfelipefg77@gmail.com>
         args:
             - base:
                 short: b
@@ -43,8 +43,8 @@ subcommands:
                 takes_value: true
             - height:
                 short: e
-                long: heigth
-                value_name: HEIGTH
+                long: height
+                value_name: HEIGHT
                 help: sets the hEight of the form | e.g. -e=5
                 takes_value: true
             - area:
@@ -54,7 +54,7 @@ subcommands:
     - parallelogram:
         about: parallelogram calculations
         version: "1.0"
-        author: Mateus F. <mateusfelipefg77@gmail>
+        author: Mateus F. <mateusfelipefg77@gmail.com>
         args:
             - base:
                 short: b
@@ -64,8 +64,8 @@ subcommands:
                 takes_value: true
             - height:
                 short: e
-                long: heigth
-                value_name: HEIGTH
+                long: height
+                value_name: HEIGHT
                 help: sets the hEight of the form | e.g. -e=5
                 takes_value: true
             - area:
@@ -75,7 +75,7 @@ subcommands:
     - triangle:
         about: triangle calculations
         version: "1.0"
-        author: Mateus F. <mateusfelipefg77@gmail>
+        author: Mateus F. <mateusfelipefg77@gmail.com>
         args:
             - base:
                 long: base
@@ -84,7 +84,7 @@ subcommands:
                 takes_value: true
             - height:
                 long: height
-                value_name: HEIGTH
+                value_name: HEIGHT
                 help: sets the height of the form | e.g. --height=5
                 takes_value: true
             - side-a:
@@ -113,7 +113,7 @@ subcommands:
     - trapezoid:
         about: trapezoid calculations
         version: "1.0"
-        author: Mateus F. <mateusfelipefg77@gmail>
+        author: Mateus F. <mateusfelipefg77@gmail.com>
         args:
             - sBase:
                 long: sBase
@@ -127,7 +127,7 @@ subcommands:
                 takes_value: true
             - height:
                 long: height
-                value_name: HEIGTH
+                value_name: HEIGHT
                 help: sets the height of the form | e.g. --height=5
                 takes_value: true
             - area:
@@ -137,7 +137,7 @@ subcommands:
     - rhombus:
         about: rhombus calculations
         version: "1.0"
-        author: Mateus F. <mateusfelipefg77@gmail>
+        author: Mateus F. <mateusfelipefg77@gmail.com>
         args:
             - sDiagonal:
                 long: sDiagonal
@@ -156,7 +156,7 @@ subcommands:
     - circle:
         about: circle calculations
         version: "1.0"
-        author: Mateus F. <mateusfelipefg77@gmail>
+        author: Mateus F. <mateusfelipefg77@gmail.com>
         args:
             - raio:
                 long: raio
