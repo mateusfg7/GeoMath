@@ -114,9 +114,9 @@ fn triangle_action(matches: &ArgMatches) {
 
 fn square_action(matches: &ArgMatches) {
     let base = String::from(matches.value_of("base").unwrap());
-    let heigth = String::from(matches.value_of("height").unwrap());
+    let height = String::from(matches.value_of("height").unwrap());
 
-    let square = make_square(base, heigth);
+    let square = make_square(base, height);
 
     if matches.is_present("area") {
         println!("{}cm", square.get_area())
