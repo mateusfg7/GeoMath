@@ -15,6 +15,7 @@ _**GEOMETRIC MATH**_
 
 </div>
 
+[![CodeFactor](https://www.codefactor.io/repository/github/mateusfg7/geomath/badge/master)](https://www.codefactor.io/repository/github/mateusfg7/geomath/overview/master)
 
 ### Usage
 
