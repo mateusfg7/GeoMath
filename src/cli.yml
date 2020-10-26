@@ -7,7 +7,7 @@ args:
     - doc:
         long: doc
         help: print the documentation
-    
+
 subcommands:
     - square:
         about: square calculations
