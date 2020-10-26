@@ -8,9 +8,9 @@ use clap::ArgMatches;
 
 mod forms;
 use forms::circle::Circle;
-use forms::rhombus::Rhombus;
 
 mod makers;
+use makers::rhombus::make_rhombus;
 use makers::square::make_square;
 use makers::trapezoid::make_trapezoid;
 use makers::triangle::{make_sides_triangle, make_simple_triangle};
@@ -130,18 +130,5 @@ fn make_circle(raio: String) -> Circle {
 
     return Circle {
         raio: formatted_raio_float,
-    };
-}
-
-fn make_rhombus(l_diagonal: String, s_diagonal: String) -> Rhombus {
-    let formatted_larger_diagonal_str = format::trim_str(l_diagonal);
-    let formatted_smaller_diagonal_str = format::trim_str(s_diagonal);
-
-    let formatted_larger_diagonal_int = format::str2int(formatted_larger_diagonal_str);
-    let formatted_smaller_diagonal_int = format::str2int(formatted_smaller_diagonal_str);
-
-    return Rhombus {
-        l_diagonal: formatted_larger_diagonal_int,
-        s_diagonal: formatted_smaller_diagonal_int,
     };
 }
