@@ -9,11 +9,12 @@ use clap::ArgMatches;
 mod forms;
 use forms::circle::Circle;
 use forms::rhombus::Rhombus;
-use forms::square::Square;
 use forms::trapezoid::Trapezoid;
 use forms::triangle::SidesTriangle;
 use forms::triangle::SimpleTriangle;
 
+mod makers;
+use makers::square::make_square;
 pub fn main() {
     let yaml = load_yaml!("cli.yml");
     let matches = App::from_yaml(yaml).get_matches();
@@ -185,19 +186,6 @@ fn make_simple_triangle(base: String, height: String) -> SimpleTriangle {
     let formatted_height_int = format::str2int(formatted_height_str);
 
     return SimpleTriangle {
-        base: formatted_base_int,
-        height: formatted_height_int,
-    };
-}
-
-fn make_square(base: String, height: String) -> Square {
-    let formatted_base_str = format::trim_str(base);
-    let formatted_height_str = format::trim_str(height);
-
-    let formatted_base_int = format::str2int(formatted_base_str);
-    let formatted_height_int = format::str2int(formatted_height_str);
-
-    return Square {
         base: formatted_base_int,
         height: formatted_height_int,
     };
