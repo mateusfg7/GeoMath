@@ -124,81 +124,81 @@ fn square_action(matches: &ArgMatches) {
 }
 
 fn make_circle(raio: String) -> Circle {
-    let formated_raio_str = format::trim_str(raio);
-    let formated_raio_float = format::str2big_float(formated_raio_str);
+    let formatted_raio_str = format::trim_str(raio);
+    let formatted_raio_float = format::str2big_float(formatted_raio_str);
 
     return Circle {
-        raio: formated_raio_float,
+        raio: formatted_raio_float,
     };
 }
 
 fn make_rhombus(l_diagonal: String, s_diagonal: String) -> Rhombus {
-    let formated_larger_diagonal_str = format::trim_str(l_diagonal);
-    let formated_smaller_diagonal_str = format::trim_str(s_diagonal);
+    let formatted_larger_diagonal_str = format::trim_str(l_diagonal);
+    let formatted_smaller_diagonal_str = format::trim_str(s_diagonal);
 
-    let formated_larger_diagonal_int = format::str2int(formated_larger_diagonal_str);
-    let formated_smaller_diagonal_int = format::str2int(formated_smaller_diagonal_str);
+    let formatted_larger_diagonal_int = format::str2int(formatted_larger_diagonal_str);
+    let formatted_smaller_diagonal_int = format::str2int(formatted_smaller_diagonal_str);
 
     return Rhombus {
-        l_diagonal: formated_larger_diagonal_int,
-        s_diagonal: formated_smaller_diagonal_int,
+        l_diagonal: formatted_larger_diagonal_int,
+        s_diagonal: formatted_smaller_diagonal_int,
     };
 }
 
 fn make_trapezoid(l_base: String, s_base: String, height: String) -> Trapezoid {
-    let formated_larger_base_str = format::trim_str(l_base);
-    let formated_smaller_base_str = format::trim_str(s_base);
-    let formated_height_str = format::trim_str(height);
+    let formatted_larger_base_str = format::trim_str(l_base);
+    let formatted_smaller_base_str = format::trim_str(s_base);
+    let formatted_height_str = format::trim_str(height);
 
-    let formated_larger_base_int = format::str2int(formated_larger_base_str);
-    let formated_smaller_base_int = format::str2int(formated_smaller_base_str);
-    let formated_height_int = format::str2int(formated_height_str);
+    let formatted_larger_base_int = format::str2int(formatted_larger_base_str);
+    let formatted_smaller_base_int = format::str2int(formatted_smaller_base_str);
+    let formatted_height_int = format::str2int(formatted_height_str);
 
     return Trapezoid {
-        l_base: formated_larger_base_int,
-        s_base: formated_smaller_base_int,
-        height: formated_height_int,
+        l_base: formatted_larger_base_int,
+        s_base: formatted_smaller_base_int,
+        height: formatted_height_int,
     };
 }
 
 fn make_sides_triangle(side_a: String, side_b: String, side_c: String) -> SidesTriangle {
-    let formated_side_a_str = format::trim_str(side_a);
-    let formated_side_b_str = format::trim_str(side_b);
-    let formated_side_c_str = format::trim_str(side_c);
+    let formatted_side_a_str = format::trim_str(side_a);
+    let formatted_side_b_str = format::trim_str(side_b);
+    let formatted_side_c_str = format::trim_str(side_c);
 
-    let formated_side_a_float = format::str2float(formated_side_a_str);
-    let formated_side_b_float = format::str2float(formated_side_b_str);
-    let formated_side_c_float = format::str2float(formated_side_c_str);
+    let formatted_side_a_float = format::str2float(formatted_side_a_str);
+    let formatted_side_b_float = format::str2float(formatted_side_b_str);
+    let formatted_side_c_float = format::str2float(formatted_side_c_str);
 
     return SidesTriangle {
-        side_a: formated_side_a_float,
-        side_b: formated_side_b_float,
-        side_c: formated_side_c_float,
+        side_a: formatted_side_a_float,
+        side_b: formatted_side_b_float,
+        side_c: formatted_side_c_float,
     };
 }
 
 fn make_simple_triangle(base: String, height: String) -> SimpleTriangle {
-    let formated_base_str = format::trim_str(base);
-    let formated_height_str = format::trim_str(height);
+    let formatted_base_str = format::trim_str(base);
+    let formatted_height_str = format::trim_str(height);
 
-    let formated_base_int = format::str2int(formated_base_str);
-    let formated_height_int = format::str2int(formated_height_str);
+    let formatted_base_int = format::str2int(formatted_base_str);
+    let formatted_height_int = format::str2int(formatted_height_str);
 
     return SimpleTriangle {
-        base: formated_base_int,
-        height: formated_height_int,
+        base: formatted_base_int,
+        height: formatted_height_int,
     };
 }
 
 fn make_square(base: String, height: String) -> Square {
-    let formated_base_str = format::trim_str(base);
-    let formated_height_str = format::trim_str(height);
+    let formatted_base_str = format::trim_str(base);
+    let formatted_height_str = format::trim_str(height);
 
-    let formated_base_int = format::str2int(formated_base_str);
-    let formated_height_int = format::str2int(formated_height_str);
+    let formatted_base_int = format::str2int(formatted_base_str);
+    let formatted_height_int = format::str2int(formatted_height_str);
 
     return Square {
-        base: formated_base_int,
-        height: formated_height_int,
+        base: formatted_base_int,
+        height: formatted_height_int,
     };
 }
