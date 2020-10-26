@@ -29,7 +29,7 @@ you will see the help menu, something like this
 
 #### **GeoMath have support of seven shapes:**
 
-[circle](#circle) - [parallelogram](#square-rectangle-and-parallelogram) - [retangle](#square-rectangle-and-parallelogram) - [rhombus](#rhombus) - [square](#square-rectangle-and-parallelogram) - [trapezoid](#trapezoid) - [triangle](#triangle)
+[circle](#circle) - [parallelogram](#square-rectangle-and-parallelogram) - [rectangle](#square-rectangle-and-parallelogram) - [rhombus](#rhombus) - [square](#square-rectangle-and-parallelogram) - [trapezoid](#trapezoid) - [triangle](#triangle)
 
 _you can type `geo-math [shape] --help`_ to get the help menu of each geometry
 
@@ -39,7 +39,7 @@ _you can type `geo-math [shape] --help`_ to get the help menu of each geometry
 FEATURES
 - **get area**
 
-  usage: `geo-math circle --raio=[THE RAIO OF CIRLCE] [ACTION]`
+  usage: `geo-math circle --raio=[THE RAIO OF CIRCLE] [ACTION]`
 
   e.g:
   ```bash
@@ -56,11 +56,11 @@ FEATURES
 
 - **get area**
 
-  usage: `geo-math [command] --base=[THE BASE OF THE SHAPE] --heigth=[THE HEIGTH OF THE SHAPE] [ACTION]`
+  usage: `geo-math [command] --base=[THE BASE OF THE SHAPE] --height=[THE HEIGHT OF THE SHAPE] [ACTION]`
 
   e.g:
   ```bash
-  $ geo-math square --base=5 --heigth=5 -a
+  $ geo-math square --base=5 --height=5 -a
 
   25cm
   ```
