@@ -9,8 +9,8 @@ mod makers;
 mod utils;
 
 use makers::circle::make_circle;
-use makers::rhombus::make_rhombus;
 
+use actions::rhombus::rhombus_action;
 use actions::square::square_action;
 use actions::trapezoid::trapezoid_action;
 use actions::triangle::triangle_action;
@@ -60,16 +60,5 @@ fn circle_actions(matches: &ArgMatches) {
 
     if matches.is_present("area") {
         println!("{}cm", circle.get_area())
-    }
-}
-
-fn rhombus_action(matches: &ArgMatches) {
-    let l_diagonal = String::from(matches.value_of("lDiagonal").unwrap());
-    let s_diagonal = String::from(matches.value_of("sDiagonal").unwrap());
-
-    let rhombus = make_rhombus(l_diagonal, s_diagonal);
-
-    if matches.is_present("area") {
-        println!("{}cm", rhombus.get_area())
     }
 }
