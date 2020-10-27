@@ -10,9 +10,9 @@ mod utils;
 
 use makers::circle::make_circle;
 use makers::rhombus::make_rhombus;
-use makers::trapezoid::make_trapezoid;
 
 use actions::square::square_action;
+use actions::trapezoid::trapezoid_action;
 use actions::triangle::triangle_action;
 
 pub fn main() {
@@ -71,17 +71,5 @@ fn rhombus_action(matches: &ArgMatches) {
 
     if matches.is_present("area") {
         println!("{}cm", rhombus.get_area())
-    }
-}
-
-fn trapezoid_action(matches: &ArgMatches) {
-    let l_base = String::from(matches.value_of("lBase").unwrap());
-    let s_base = String::from(matches.value_of("sBase").unwrap());
-    let height = String::from(matches.value_of("height").unwrap());
-
-    let trapezoid = make_trapezoid(l_base, s_base, height);
-
-    if matches.is_present("area") {
-        print!("{}cm", trapezoid.get_area())
     }
 }
