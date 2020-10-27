@@ -9,3 +9,17 @@ impl Trapezoid {
         ((&self.l_base + &self.s_base) * &self.height) / 2
     }
 }
+
+#[cfg(test)]
+mod test {
+    #[test]
+    fn get_area() {
+        let trapezoid = super::Trapezoid {
+            s_base: 42,
+            l_base: 42,
+            height: 42,
+        };
+
+        assert_eq!(trapezoid.get_area(), 1764);
+    }
+}
