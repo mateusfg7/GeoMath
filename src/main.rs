@@ -1,15 +1,13 @@
 #[macro_use]
 extern crate clap;
 use clap::App;
-use clap::ArgMatches;
 
 mod actions;
 mod forms;
 mod makers;
 mod utils;
 
-use makers::circle::make_circle;
-
+use actions::circle::circle_actions;
 use actions::rhombus::rhombus_action;
 use actions::square::square_action;
 use actions::trapezoid::trapezoid_action;
@@ -50,15 +48,5 @@ pub fn main() {
     geo-math --help
             "
         )
-    }
-}
-
-fn circle_actions(matches: &ArgMatches) {
-    let raio = String::from(matches.value_of("raio").unwrap());
-
-    let circle = make_circle(raio);
-
-    if matches.is_present("area") {
-        println!("{}cm", circle.get_area())
     }
 }
