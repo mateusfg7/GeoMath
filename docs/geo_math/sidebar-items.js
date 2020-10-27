@@ -1,1 +1,1 @@
-initSidebarItems({"fn":[["circle_actions",""],["main",""],["make_circle",""],["make_rhombus",""],["make_sides_triangle",""],["make_simple_triangle",""],["make_square",""],["make_trapezoid",""],["rhombus_action",""],["square_action",""],["trapezoid_action",""],["triangle_action",""]],"mod":[["forms",""],["utils",""]]});
+initSidebarItems({"fn":[["main",""]],"mod":[["actions",""],["forms",""],["makers",""],["utils",""]]});

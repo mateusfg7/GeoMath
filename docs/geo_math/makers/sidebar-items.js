@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["circle",""],["rhombus",""],["square",""],["trapezoid",""],["triangle",""]]});
