@@ -1,18 +1,19 @@
-mod utils;
-
 #[macro_use]
 extern crate clap;
 use clap::App;
 use clap::ArgMatches;
 
+mod actions;
 mod forms;
-
 mod makers;
+mod utils;
+
 use makers::circle::make_circle;
 use makers::rhombus::make_rhombus;
-use makers::square::make_square;
 use makers::trapezoid::make_trapezoid;
 use makers::triangle::{make_sides_triangle, make_simple_triangle};
+
+use actions::square::square_action;
 
 pub fn main() {
     let yaml = load_yaml!("cli.yml");
@@ -109,16 +110,5 @@ fn triangle_action(matches: &ArgMatches) {
         if matches.is_present("perimeter") {
             println!("{}cm", triangle.get_semi_perimeter())
         }
-    }
-}
-
-fn square_action(matches: &ArgMatches) {
-    let base = String::from(matches.value_of("base").unwrap());
-    let height = String::from(matches.value_of("height").unwrap());
-
-    let square = make_square(base, height);
-
-    if matches.is_present("area") {
-        println!("{}cm", square.get_area())
     }
 }
