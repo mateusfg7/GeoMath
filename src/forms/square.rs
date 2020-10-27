@@ -8,3 +8,16 @@ impl Square {
         self.base * self.height
     }
 }
+
+#[cfg(test)]
+mod test {
+    #[test]
+    fn get_area() {
+        let square = super::Square {
+            base: 42,
+            height: 42,
+        };
+
+        assert_eq!(square.get_area(), 1764);
+    }
+}
