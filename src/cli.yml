@@ -9,27 +9,6 @@ args:
         help: print the documentation
 
 subcommands:
-    - square:
-        about: square calculations
-        version: "1.0"
-        author: Mateus F. <mateusfelipefg77@gmail>
-        args:
-            - base:
-                short: b
-                long: base
-                value_name: BASE
-                help: sets the Base of the form | e.g. -b=5
-                takes_value: true
-            - height:
-                short: e
-                long: height
-                value_name: HEIGHT
-                help: sets the hEight of the form | e.g. -e=5
-                takes_value: true
-            - area:
-                short: a
-                long: area
-                help: get tha Area of the form
     - rectangle:
         about: rectangle calculations
         version: "1.0"

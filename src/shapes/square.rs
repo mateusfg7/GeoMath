@@ -1,11 +1,19 @@
-pub struct Square {
-    pub base: i32,
-    pub height: i32,
+struct Square {
+    base: i32,
+    height: i32,
 }
 
 impl Square {
-    pub fn get_area(&self) -> i32 {
+    fn get_area(&self) -> i32 {
         self.base * self.height
+    }
+}
+
+pub fn square_action(area: bool, base: i32, height: i32) {
+    let square = Square { base, height };
+
+    if area {
+        println!("{}cm", square.get_area());
     }
 }
 
