@@ -13,6 +13,17 @@ fn main() {
             square::square_action(*area, *base, *height)
         }
         Some(Commands::Circle { radius, area }) => circle::circle_action(*area, *radius),
+        Some(Commands::Triangle {
+            base,
+            height,
+            side_a,
+            side_b,
+            side_c,
+            area,
+            perimeter,
+        }) => {
+            triangle::triangle_actions(*base, *height, *side_a, *side_b, *side_c, *area, *perimeter)
+        }
         None => {}
     }
 }
