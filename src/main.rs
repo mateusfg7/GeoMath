@@ -24,6 +24,12 @@ fn main() {
         }) => {
             triangle::triangle_actions(*base, *height, *side_a, *side_b, *side_c, *area, *perimeter)
         }
+        Some(Commands::Trapezoid {
+            l_base,
+            s_base,
+            height,
+            area,
+        }) => trapezoid::trapezoid_actions(*s_base, *l_base, *height, *area),
         None => {}
     }
 }
