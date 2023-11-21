@@ -1,9 +1,0 @@
-name: GeoMath
-version: "1.0.0"
-author: Mateus Felipe <mateusfelipefg77@gmail.com>
-about: Geometric calcs
-usage: geo-math <FORM> [VALUES] [ACTION]
-args:
-    - doc:
-        long: doc
-        help: print the documentation
