@@ -30,6 +30,11 @@ fn main() {
             height,
             area,
         }) => trapezoid::trapezoid_actions(*s_base, *l_base, *height, *area),
+        Some(Commands::Rhombus {
+            l_diagonal,
+            s_diagonal,
+            area,
+        }) => rhombus::rhombus_actions(*s_diagonal, *l_diagonal, *area),
         None => {}
     }
 }

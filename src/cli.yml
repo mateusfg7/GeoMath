@@ -7,24 +7,3 @@ args:
     - doc:
         long: doc
         help: print the documentation
-
-subcommands:
-    - rhombus:
-        about: rhombus calculations
-        version: "1.0"
-        author: Mateus F. <mateusfelipefg77@gmail.com>
-        args:
-            - sDiagonal:
-                long: sDiagonal
-                value_name: SMALLER DIAGONAL
-                help: sets the smaller diagonal of the form | e.g. --sDiagonal=5
-                takes_value: true
-            - lDiagonal:
-                long: lDiagonal
-                value_name: LARGER DIAGONAL
-                help: sets the larger diagonal of the form | e.g. --sDiagonal=5
-                takes_value: true
-            - area:
-                short: a
-                long: area
-                help: get tha Area of the form

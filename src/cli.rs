@@ -68,11 +68,29 @@ pub enum Commands {
         #[arg(
             short = 'e',
             long,
-            help = "Sets the hEight of the triangle | e.g. -e 5"
+            help = "Sets the hEight of the trapezoid | e.g. -e 5"
         )]
         height: f32,
 
         #[arg(short, long, help = "Get the Area of the trapezoid")]
+        area: bool,
+    },
+    #[command(about="Mathematical operations with rhombus", long_about = None)]
+    Rhombus {
+        #[arg(
+            short = 'l',
+            long = "larger-diagonal",
+            help = "Sets the Larger diagonal of the rhombus | e.g. --larger-diagonal 5"
+        )]
+        l_diagonal: f32,
+        #[arg(
+            short = 's',
+            long = "smaller-diagonal",
+            help = "Sets the Smaller diagonal of the rhombus | e.g. --smaller-diagonal 5"
+        )]
+        s_diagonal: f32,
+
+        #[arg(short, long, help = "Get the Area of the rhombus")]
         area: bool,
     },
 }
