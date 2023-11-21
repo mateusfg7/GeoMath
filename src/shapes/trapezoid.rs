@@ -1,3 +1,5 @@
+use clap::Parser;
+
 struct Trapezoid {
     s_base: f32,
     l_base: f32,
@@ -20,6 +22,32 @@ pub fn trapezoid_actions(s_base: f32, l_base: f32, height: f32, area: bool) {
     if area {
         println!("Area: {}cm", trapezoid.get_area())
     }
+}
+
+#[derive(Parser)]
+#[command(about="Mathematical operations with trapezoids", long_about = None)]
+pub struct Command {
+    #[arg(
+        short = 'l',
+        long = "larger-base",
+        help = "Sets the Larger Base of the trapezoid | e.g. --larger-base 5"
+    )]
+    pub l_base: f32,
+    #[arg(
+        short = 's',
+        long = "smaller-base",
+        help = "Sets the Smaller Base of the trapezoid | e.g. --smaller-base 5"
+    )]
+    pub s_base: f32,
+    #[arg(
+        short = 'e',
+        long,
+        help = "Sets the hEight of the trapezoid | e.g. -e 5"
+    )]
+    pub height: f32,
+
+    #[arg(short, long, help = "Get the Area of the trapezoid")]
+    pub area: bool,
 }
 
 #[cfg(test)]
