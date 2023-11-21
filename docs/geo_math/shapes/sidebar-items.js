@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"mod":["circle","rhombus","square","trapezoid","triangle"]};

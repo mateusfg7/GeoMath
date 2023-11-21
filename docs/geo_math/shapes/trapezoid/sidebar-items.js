@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["trapezoid_actions"],"struct":["Command","Trapezoid"]};
