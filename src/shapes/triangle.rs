@@ -37,16 +37,11 @@ pub fn triangle_actions(
     side_a: Option<f32>,
     side_b: Option<f32>,
     side_c: Option<f32>,
-
-    area: bool,
-    perimeter: bool,
 ) {
     if let (Some(base), Some(height)) = (base, height) {
         let triangle = SimpleTriangle { base, height };
 
-        if area {
-            println!("Area: {}cm", triangle.get_area())
-        }
+        println!("Area: {}cm", triangle.get_area());
     } else if let (Some(side_a), Some(side_b), Some(side_c)) = (side_a, side_b, side_c) {
         let triangle = SidesTriangle {
             side_a,
@@ -54,13 +49,8 @@ pub fn triangle_actions(
             side_c,
         };
 
-        if area {
-            println!("Area: {}cm", triangle.get_area())
-        }
-
-        if perimeter {
-            println!("Perimeter: {}cm", triangle.get_semi_perimeter())
-        }
+        println!("Area: {}cm", triangle.get_area());
+        println!("Perimeter: {}cm", triangle.get_semi_perimeter());
     }
 }
 
@@ -82,11 +72,6 @@ pub struct Command {
     pub side_b: Option<f32>,
     #[arg(short = None, long="side-c", help = "Sets the side c of the triangle | e.g. --side-c 5")]
     pub side_c: Option<f32>,
-
-    #[arg(short, long, help = "Get the Area of the triangle")]
-    pub area: bool,
-    #[arg(short, long, help = "Get the Perimeter of the triangle")]
-    pub perimeter: bool,
 }
 
 #[cfg(test)]

@@ -11,12 +11,10 @@ impl Square {
     }
 }
 
-pub fn square_action(area: bool, base: i32, height: i32) {
+pub fn square_action(base: i32, height: i32) {
     let square = Square { base, height };
 
-    if area {
-        println!("{}cm", square.get_area());
-    }
+    println!("{}cm", square.get_area());
 }
 
 #[derive(Parser)]
@@ -27,9 +25,6 @@ pub struct Command {
 
     #[arg(short = 'e', long, help = "Sets the hEight of the square | e.g. -e 5")]
     pub height: i32,
-
-    #[arg(short, long, help = "Get the Area of the square")]
-    pub area: bool,
 }
 
 #[cfg(test)]

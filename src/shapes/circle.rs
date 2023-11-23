@@ -12,12 +12,10 @@ impl Circle {
     }
 }
 
-pub fn circle_action(area: bool, radius: f64) {
+pub fn circle_action(radius: f64) {
     let circle = Circle { radius };
 
-    if area {
-        println!("{}cm", circle.get_area());
-    }
+    println!("{}cm", circle.get_area());
 }
 
 #[derive(Parser)]
@@ -25,9 +23,6 @@ pub fn circle_action(area: bool, radius: f64) {
 pub struct Command {
     #[arg(short, long, help = "Sets the radius of the circle | e.g. -r 5")]
     pub radius: f64,
-
-    #[arg(short, long, help = "Get the Area of the circle")]
-    pub area: bool,
 }
 
 #[cfg(test)]

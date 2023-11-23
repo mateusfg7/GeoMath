@@ -12,16 +12,14 @@ impl Trapezoid {
     }
 }
 
-pub fn trapezoid_actions(s_base: f32, l_base: f32, height: f32, area: bool) {
+pub fn trapezoid_actions(s_base: f32, l_base: f32, height: f32) {
     let trapezoid = Trapezoid {
         height,
         l_base,
         s_base,
     };
 
-    if area {
-        println!("Area: {}cm", trapezoid.get_area())
-    }
+    println!("Area: {}cm", trapezoid.get_area())
 }
 
 #[derive(Parser)]
@@ -45,9 +43,6 @@ pub struct Command {
         help = "Sets the hEight of the trapezoid | e.g. -e 5"
     )]
     pub height: f32,
-
-    #[arg(short, long, help = "Get the Area of the trapezoid")]
-    pub area: bool,
 }
 
 #[cfg(test)]

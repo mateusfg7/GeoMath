@@ -11,15 +11,13 @@ impl Rhombus {
     }
 }
 
-pub fn rhombus_actions(s_diagonal: f32, l_diagonal: f32, area: bool) {
+pub fn rhombus_actions(s_diagonal: f32, l_diagonal: f32) {
     let rhombus = Rhombus {
         l_diagonal,
         s_diagonal,
     };
 
-    if area {
-        println!("{}cm", rhombus.get_area())
-    }
+    println!("{}cm", rhombus.get_area())
 }
 
 #[derive(Parser)]
@@ -37,9 +35,6 @@ pub struct Command {
         help = "Sets the Smaller diagonal of the rhombus | e.g. --smaller-diagonal 5"
     )]
     pub s_diagonal: f32,
-
-    #[arg(short, long, help = "Get the Area of the rhombus")]
-    pub area: bool,
 }
 
 #[cfg(test)]
