@@ -1,5 +1,5 @@
-mod action;
-pub use action::circle_action;
+mod view;
+pub use view::view;
 
 mod command;
 pub use command::Command;

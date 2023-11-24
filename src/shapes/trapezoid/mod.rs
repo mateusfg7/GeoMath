@@ -4,5 +4,5 @@ pub use command::Command;
 mod structs;
 pub use structs::Trapezoid;
 
-mod action;
-pub use action::trapezoid_actions;
+mod view;
+pub use view::view;

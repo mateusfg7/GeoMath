@@ -1,6 +1,6 @@
 use crate::shapes::triangle::{SidesTriangle, SimpleTriangle};
 
-pub fn triangle_actions(
+pub fn view(
     base: Option<f32>,
     height: Option<f32>,
 
