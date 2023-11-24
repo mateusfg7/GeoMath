@@ -1,4 +1,4 @@
-use crate::shapes::trapezoid::Trapezoid;
+use crate::{shapes::trapezoid::Trapezoid, tui};
 
 pub fn view(s_base: f32, l_base: f32, height: f32) {
     let trapezoid = Trapezoid {
@@ -7,5 +7,9 @@ pub fn view(s_base: f32, l_base: f32, height: f32) {
         s_base,
     };
 
-    println!("Area: {}cm", trapezoid.get_area())
+    println!(
+        "{}{}",
+        tui::title("Area"),
+        tui::content(trapezoid.get_area().to_string().as_str())
+    )
 }

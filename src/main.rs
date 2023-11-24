@@ -1,3 +1,5 @@
+mod tui;
+
 mod cli;
 use cli::{Commands, CLI};
 
@@ -8,6 +10,8 @@ use clap::Parser;
 
 fn main() {
     let cli = CLI::parse();
+
+    print!("\n");
 
     match &cli.command {
         Some(Commands::Square(square::Command { base, height })) => square::view(*base, *height),

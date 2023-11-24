@@ -1,4 +1,7 @@
-use crate::shapes::triangle::{SidesTriangle, SimpleTriangle};
+use crate::{
+    shapes::triangle::{SidesTriangle, SimpleTriangle},
+    tui,
+};
 
 pub fn view(
     base: Option<f32>,
@@ -11,7 +14,11 @@ pub fn view(
     if let (Some(base), Some(height)) = (base, height) {
         let triangle = SimpleTriangle { base, height };
 
-        println!("Area: {}cm", triangle.get_area());
+        println!(
+            "{}{}",
+            tui::title("Area"),
+            tui::content(triangle.get_area().to_string().as_str())
+        );
     } else if let (Some(side_a), Some(side_b), Some(side_c)) = (side_a, side_b, side_c) {
         let triangle = SidesTriangle {
             side_a,
@@ -19,7 +26,16 @@ pub fn view(
             side_c,
         };
 
-        println!("Area: {}cm", triangle.get_area());
-        println!("Perimeter: {}cm", triangle.get_semi_perimeter());
+        println!(
+            "{}{}",
+            tui::title("Area"),
+            tui::content(triangle.get_area().to_string().as_str())
+        );
+        print!("\n");
+        println!(
+            "{}{}",
+            tui::title("Perimeter"),
+            tui::content(triangle.get_semi_perimeter().to_string().as_str())
+        );
     }
 }
