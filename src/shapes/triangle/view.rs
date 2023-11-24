@@ -31,7 +31,7 @@ pub fn view(
             tui::title("Area"),
             tui::content(triangle.get_area().to_string().as_str())
         );
-        print!("\n");
+        println!();
         println!(
             "{}{}",
             tui::title("Perimeter"),

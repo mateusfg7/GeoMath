@@ -11,7 +11,7 @@ use clap::Parser;
 fn main() {
     let cli = CLI::parse();
 
-    print!("\n");
+    println!();
 
     match &cli.command {
         Some(Commands::Square(square::Command { base, height })) => square::view(*base, *height),
