@@ -5,7 +5,7 @@ pub struct Rhombus {
 
 impl Rhombus {
     pub fn get_area(&self) -> f32 {
-        (&self.s_diagonal * &self.l_diagonal) / 2.0
+        (self.s_diagonal * self.l_diagonal) / 2.0
     }
 }
 

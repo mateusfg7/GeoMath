@@ -6,7 +6,7 @@ impl Circle {
     pub fn get_area(&self) -> f64 {
         let pi = std::f64::consts::PI;
 
-        return &self.radius * pi.powi(2);
+        self.radius * pi.powi(2)
     }
 }
 

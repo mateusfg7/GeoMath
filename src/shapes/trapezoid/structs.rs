@@ -6,7 +6,7 @@ pub struct Trapezoid {
 
 impl Trapezoid {
     pub fn get_area(&self) -> f32 {
-        ((&self.l_base + &self.s_base) * &self.height) / 2.0
+        ((self.l_base + self.s_base) * self.height) / 2.0
     }
 }
 
